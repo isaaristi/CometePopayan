@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { NavController, ToastController, LoadingController } from 'ionic-angular';
 import { LoginService } from '../../providers/login-service';
 import { PrincipalPage } from '../principal/principal';
+import { RegisterPage } from '../register/register';
 import { TabsPage } from '../../../menu/src/pages/tabs/tabs';
 import { Storage } from '@ionic/storage';
 import {Users} from '../../models/users';
 
 
 @Component({
-  selector: 'page-home',
+  selector: 'page-login',
   templateUrl: 'login.html'
 })
 export class LoginPage {
@@ -44,6 +45,10 @@ export class LoginPage {
     });
 
 
+  }
+
+  nextr() {
+    this.navCtrl.push(RegisterPage);
   }
 
 

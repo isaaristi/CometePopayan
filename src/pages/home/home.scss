@@ -19,8 +19,16 @@ page-home {
         //color: #3FCC9D;
     }
 
+    .img-fullbackground {
+        width: 100%;
+        height: 92%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
     .home {
         background: url("../assets/img/torreReloj.jpg");
+        background-size: 100%;
     }
 
     .btns {
