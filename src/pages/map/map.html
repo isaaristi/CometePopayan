@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Mapa</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<h1>Restaurante: {{nombre}}</h1>
+<h3>Direccion: {{direc}}</h3>
+   
+      <sebm-google-map [latitude]="latitud" [longitude]="longitud" [zoom]="15">
+        <sebm-google-map-marker [latitude]="latitud" [longitude]="longitud"></sebm-google-map-marker>
+      </sebm-google-map>
+
+
+

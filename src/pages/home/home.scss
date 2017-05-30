@@ -1,0 +1,38 @@
+page-home {
+
+    .homeTit {
+        //font-family: IndieFlower, cursive;
+        font-size: 20 px;
+    }
+
+    .img {
+        text-align: center;
+    }
+
+    .homeBut{
+        //font-family: IndieFlower, cursive;
+        font-size: 14 px;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+        color: white;
+        //color: #3FCC9D;
+    }
+
+    .home {
+        background: url("../assets/img/torreReloj.jpg");
+    }
+
+    .btns {
+        padding: 5px 0;
+        position: absolute; 
+        top: 92%;
+        width: 100%;
+        height: 8%;
+        background: rgba(10,10,10,0.5);
+    }
+
+}
+
+
+

@@ -1,0 +1,51 @@
+page-detalles {
+.but {
+    font-family: IndieFlower;
+    font-size: 15px;
+    text-align: center;
+    color: #EFEFEF;
+    background: #CC7F75 ;
+}
+.but:hover{
+    background: #CC7F75;
+}
+
+.fondo{
+    background: #EFEFEF;
+}
+
+.barramenu {
+    background: #F6F6F6;
+}
+
+.textoBoton {
+    font-family: sans-serif;
+    font-size: 10px;
+    color: #CC7F75;
+}
+
+.contenido{
+    font-family: sans-serif;
+}
+
+.titulo{
+    color:black;
+}
+
+.action-sheets-basic-page {
+  .ion-md-share {
+    color: #ED4248;
+  }
+  .ion-md-arrow-dropright-circle {
+    color: #508AE4;
+  }
+  .ion-md-heart-outline {
+    color: #31D55F;
+  }
+  .action-sheet-cancel ion-icon,
+  .action-sheet-destructive ion-icon {
+    color: #757575;
+  }
+}
+
+}
