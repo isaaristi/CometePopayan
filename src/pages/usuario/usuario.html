@@ -2,7 +2,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Usuario:{{nombre}}</ion-title>
+    <ion-title>Hola {{nombre}}!</ion-title>
     <ion-buttons end>
       <button ion-button icon-only color="primary" (click)="logout()">
         <ion-icon name="power"></ion-icon>
@@ -39,6 +39,7 @@
   
  <div [ngSwitch]="info">
 <ion-list *ngSwitchCase="'estuve'" inset>
+  <h4>{{nombre}}, recuerdas cuando estuviste aquí?</h4>
  <ion-card col-12 col-md-6 col-lg-4 *ngIf="nomb != null">
       <img [src]="img" height="250"/>
     <ion-card-content>
@@ -57,10 +58,11 @@
     </ion-card-content>
     <button ion-col col-3 ion-button clear block class="homeBut" item-right (click)="quitarE()">Eliminar</button>
   </ion-card>
-  <h2 *ngIf= "nomb == null" color="secondary">Usted no ha guardado ningún restaurante</h2>
+  <h2 *ngIf= "nomb == null" color="secondary">Usted no ha guardado ningún lugar</h2>
 </ion-list>
 
 <ion-list *ngSwitchCase="'guardados'" inset>
+  <h4>{{nombre}}, mira los lugares que te gustaron:</h4>
   <ion-card col-12 col-md-6 col-lg-4 *ngIf="nom != null">
       <img [src]="imagen" height="250"/>
     <ion-card-content>

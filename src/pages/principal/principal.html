@@ -7,10 +7,10 @@
     <ion-searchbar (ionInput)="getItems($event)" placeholder="Buscar restaurante"></ion-searchbar>
     <ion-segment [(ngModel)]="restaurantes" color="coloruno">
       <ion-segment-button value="trending">
-        Trending
+        Lugares
       </ion-segment-button>
       <ion-segment-button value="tipos">
-        Tipos
+        Actividad Reciente
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
@@ -31,11 +31,17 @@
     </ion-list>
 
     <ion-list *ngSwitchCase="'tipos'" inset>
-        <button ion-item *ngFor="let n of service.items" (click)="nextByType(n.valor)" >
+        <!--<button ion-item *ngFor="let n of service.items" (click)="nextByType(n.valor)" >
         <ion-thumbnail item-left>
         <img [src] ="n.imagen"/>
         </ion-thumbnail>
        <h2>{{n.nombre}}</h2> 
+      </button>-->
+      <button ion-item *ngFor="let m of restaurante let i = index" (click)="next(i)">
+        <div item-left>
+          <img [src]="m.logo" style="border-radius: 100%; width: 60px; height: 60px;">
+        </div>
+        <p>A {{(i+5)*5}} personas les ha gustado {{m.nombre}}</p>
       </button>
     </ion-list>
   </div>
