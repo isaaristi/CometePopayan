@@ -24,8 +24,10 @@ $font-path: "../assets/fonts";
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #3FCC9D,
-  secondary:  #CC7F75,
+  //primary:    #3FCC9D,
+  //secondary:  #CC7F75,
+  primary:    #3FFF9D,
+  secondary:  #FFF,
   gris: #A9A9A9,
   danger:     #f53d3d,
   light:      #f4f4f4,
@@ -35,8 +37,8 @@ $colors: (
     base: #EFEFEF,
     contrast: #3FCC9D
   ),
-  fondo: #CFD1CD
-
+  fondo: #CFD1CD,
+  transparente: rgba(255,255,255,0.1)
 );
 
 

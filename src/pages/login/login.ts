@@ -34,10 +34,10 @@ export class LoginPage {
     this.service.login(this.users, this.pass).subscribe(res => {
       loading.dismiss();
       let data = {username:this.users, password:this.pass};
-    this.storage.set("logged",true);
-    this.storage.set("user", data);
-    console.log(this.users);
+      console.log(this.users);
       if (res.success) {
+        this.storage.set("logged",true);
+        this.storage.set("user", data);
         this.navCtrl.setRoot(TabsPage, {users: this.users});
       } else {
         this.toastCtrl.create({ message: "Usuario o contraseña incorrecta", duration: 3000 }).present();

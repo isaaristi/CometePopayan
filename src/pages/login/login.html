@@ -3,20 +3,20 @@
 
   <div class="btns">
 
-      <ion-item>
+      <ion-item class="item">
         <ion-label floating icon-left> <ion-icon name="person"></ion-icon>Nombre de usuario o email</ion-label>
-        
-        <ion-input name="nombre" type="text" clear [(ngModel)]="users" required></ion-input>
+        <ion-input name="nombre" type="text" [(ngModel)]="users" required></ion-input>
       </ion-item>
-
-      <!--<ion-item>
+      <ion-item class="item">
         <ion-label floating icon-left><ion-icon name="lock"></ion-icon>Contraseña</ion-label>
         <ion-input name="pass" type="password" clear [(ngModel)]="pass" required></ion-input>
-      </ion-item>-->
+      </ion-item>
 
-      <button ion-col col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 ion-button clear class="but" (click)="login()">Ingresar</button>
-      <button ion-col col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 ion-button clear class="but" (click)="nextr()">Registrarse</button>
-      
+      <button ion-col col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 ion-button clear class="but margin-small" (click)="login()">Ingresar</button>
+  </div>
+
+  <div class="btn">
+    <button ion-col col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4 ion-button clear class="but" (click)="nextr()">Registrarse</button>    
   </div>
 
 </ion-content>
